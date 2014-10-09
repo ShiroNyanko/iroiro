@@ -28,10 +28,7 @@ body {
 	font-size: 100%;
 	font-weight: normal;
 	line-height: 1.5;
-	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
-}
-h1,h2,h3,h4,h5,h6 {
-	font-size: 100%;
+	font-family: "HG正楷書体-PRO","メイリオ",Meiryo,sans-serif;
 }
 /*--Link------------------------------------------------------------*/
 a,
@@ -54,101 +51,152 @@ article,aside,details,footer,header,main,menu,nav,section,summary {
 }
 /*--layout----------------------------------------------------------*/
 #wrapper {
-	width: 100%;
+	width: 800px;
+	border: 1px solid black;
+	margin: 4px auto;
+	min-height: 110%;
+	position: relative;
 }
 #header {
+	position: relative;
 	background: #9fb7d4;
-	min-width: 960px;
+	min-width: 800px;
+	min-height: 160px;
+	border-bottom: 4px solid #999;	
 }
 #header header {
 	margin: 0 auto;
+	
 }
+#groval{
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+	height: 35px;
+}
+#groval ul{
+	bottom: 0px;
+	margin: 0;
+	padding: 0; 
+}
+
+#groval li{ 
+	display: inline; 
+	padding: 0; 
+	margin: 0; 
+	float: left;
+}
+
+#groval li a{
+	display: block; 
+	border: 1px solid #666;
+	background-color: #FFC;
+	padding: 3px;
+	text-decoration: none;
+	color: #333;
+	width: 90px; 
+	margin: 1px;
+	text-align: center;
+}
+
+
 #contents {
 	margin: 0 auto;
 	overflow: hidden;
-	background: #FFC;
-	min-width: 960px;
-	min-height: 500px;/*サンプル用に高さ設定してあります。*/
+	width: 800px;
+	height: auto;
 }
-/*--------------------------------------------------------------------
-左サイドバー
---------------------------------------------------------------------*/
+#footer
+{
+	background-color: #999;
+	background-image: "kabe--.jpg";
+	width:800px;
+	height: auto;
+	position: absolute;
+	bottom: 0px;
+	padding: 3px 0;
+	text-align: center;
+}
+
 #main {
 	overflow: hidden;
 	float: right;
 	width: 100%;
-	margin: 0 0 0 -180px;
+	margin: 0 0 80px -135px;
 }
 #main-inner {
 	position: relative;
-	margin: 0 0 0 180px;
+	padding: 3px;
+	margin: 0 0 0 135px;
 }
-#sidebar {
+#side {
 	float: left;
-	width: 180px;
-	min-height: 1000px;
-	background: #cccccc;
+	width: 130px;
+	min-height: 600px;
+	border-right: 1px solid #999;
 	margin: 0 0 10px 0;
 }
-/*------------------------------------------------------------------*/
-#footer {
-	border-top: 2px solid #9fb7d4;
-	min-width: 960px;
+#side ul{
+	margin: 0;
+	padding: 0;
 }
-#footer footer {
-	margin: 0 auto;
-	height: 120px;/*サンプル用に高さ設定してあります。*/
+#side li{
+	display: inline;
+	padding: 0;
+	margin: 0;
 }
-#header header,
-#contents,
-#footer footer {
-	width: 960px;
-}
-/*--common----------------------------------------------------------*/
-#header h1,
-#header h2,
-#contents h3,
-#header p,
-#contents p,
-#footer p {
-	padding: 10px;
+#side li a{
+	display: block; 
+	border: 1px solid #666;
+	background-color: #F9FFCC;
+	padding: 6px;
+	text-decoration: none;
+	color: #333;
+	width: 110px; 
+	margin: 3px auto;
+	text-align: center;
 }
 
 
 
-
-
-
-
-
-
-
-#grovalMenu ul{
-margin: 0; 
-padding: 0; 
-list-style: none;
+/*------------
+	手順部分
+ ------------*/
+.process{
+	border-top: 1px dotted black;
+	margin: 0px;
+	margin-right: 4px;
+	padding: 5px;
+}
+.process img{
+	margin: 8px;
+	margin-right: 12px;
+	max-height: 300px;
+	width: auto;
+	border-radius: 6px;
+}
+.process p {
+	margin: 10px;
 }
 
-#grovalMenu li{ 
-display: inline; 
-padding: 0; 
-margin: 0; 
-float: left;
+.qrcode{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	right: 10px;
+	top: 65px;
+}
+.qrcode img{
+	height: 200px;
+	float: right;
+	
 }
 
-#grovalMenu li a{
-display: block; 
-border: 1px solid #666;
-background-color: #ccc;
-padding: 3px;
-text-decoration: none;
-color: #333;
-width: auto; 
-margin: 1px;
-text-align: center;
-font-size: 14px;
+
+.float{
+	float: left;
 }
-#grovalMenu li a:hover{
-background-color: #2d56be;
-color: #fff;
+.clear{
+	clear: both;
 }
+
